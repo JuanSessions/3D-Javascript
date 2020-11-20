@@ -5,16 +5,22 @@
 }
 
 body {
-    margin: 10rem;
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+    background-color: #000000;
+    /* min-height: 100vh; */
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 55vh;
+    margin: 2.5rem 4.5rem 4.5rem 4.5rem;
     perspective: 1000px;
     background-image: url(./images/darkBackground.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 .container {
@@ -27,16 +33,14 @@ body {
 .card {
     transform-style: preserve-3d;
     background-color: rgba(40, 41, 54, 0.6);
-    margin-bottom: 15rem;
-    min-height: 50vh;
     width: 35rem;
     border-radius: 30px;
     padding: 0rem 5rem;
-    box-shadow: 0 20px 20px rgba(240, 239, 239, 0.2), 0px 0px 50px rgba(250, 248, 248, 0.2);
+    box-shadow: 0px 0px 16px -4px #FFFFFF;
 }
 
 .juan {
-    min-height: 35vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +62,7 @@ body {
     border-radius: 50%;
     z-index: 1;
     animation: fadeIn 1.5s infinite alternate;
-    animation: rotation 13s infinite linear;
+    animation: rotation 11s infinite linear;
 }
 
 @keyframes rotation {
@@ -83,12 +87,13 @@ body {
     font-size: 3rem;
     letter-spacing: 0.1rem;
     transition: all 0.75s ease-out;
-    text-shadow: 1px 1px 4px #464545;
+    text-shadow: 2px 2px 4px #797777;
 }
 
 .info h3 {
+    text-align: center;
     font-size: 1.3rem;
-    padding: 2rem 0rem;
+    padding-bottom: 2rem;
     color: #8a8787;
     font-weight: lighter;
     transition: all 0.75s ease-out;
@@ -101,7 +106,7 @@ body {
 }
 
 .songs button {
-    margin: 3rem;
+    margin: 1rem 4.5rem;
     padding: 0.5rem 2rem;
     background: rgb(212, 211, 211);
     border: none;
